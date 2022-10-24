@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">recycler-view</string>
+    <string name="_22">Age: 22</string>
+    <string name="person_5">Person #1</string>
+    <string name="username">Username</string>
+    <string name="password">Age</string>
+    <string name="add">Add</string>
+</resources>
