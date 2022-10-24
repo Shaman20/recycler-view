@@ -1,8 +1,10 @@
 package com.example.recycler_view
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -24,6 +26,31 @@ class MainActivity : AppCompatActivity() {
 
         rvContact.layoutManager = LinearLayoutManager(this)
 
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.i(TAG, "OnStart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.i(TAG, "OnResume")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.i(TAG, "OnStop")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.i(TAG, "OnPause")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.i(TAG, "OnDestroy")
     }
 
     private fun createContacts(): List<Person> {
